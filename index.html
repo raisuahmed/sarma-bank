@@ -10,8 +10,72 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
-<h1>Hi Hello</h1>
+<body class="bg-dark">
+    <div id="login-area">
+        <h1 class="text-center" id="width" style="color: #f54093;">Welcome to Sarma Bank</h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <input type="text" class="form-control" placeholder="Email">
+            <br>
+            <input type="password" class="form-control" placeholder="Password">
+            <br>
+            <button id="enter" class="btn btn-success m-md-5" >Enter</button>
+        
+        </div>
+    </div>
+    
+<div id="transaction-area" class="text text-center">
+    <h1  style="color: rgb(109, 28, 13);">Sarma Bank</h1>
+    <h1  style="color: tomato;">Transaction Area</h1>
+<div class="row">
+    <div class="col-md-4 ">
+        <div class="deposit status">
+            <h5>Deposit</h5>
+            <h2>$<span id="currentDeposit">00</span></h2>
+        </div>
+    </div>
+    <div class="col-md-4 ">
+        <div class="withdraw  status">
+            <h5>Withdraw</h5>
+        <h2>$ <span id="currentWithdraw">00</span> </h2>
+        </div>
+    </div>
+    <div class="col-md-4 ">
+        <div class="balance status">
+            <h5>Balance</h5>
+        <h2>$<span id="currentBalance">1240</span></h2>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="submit-area">
+            <h4>Deposit</h4>
+        <input id="depositAmount" type="text" class="form-control" placeholder="$amount you want to deposit">
+        <br>
+        <button id="deposit-Btn" class= "btn btn-success">Deposit</button>
+    </div>
+        </div>
+    <div class="col-md-6">
+        <div class="submit-area">
+            <h4>withdraw</h4>
+        <input id="withdrawAmount" type="text" class="form-control" placeholder="$amount you want to deposit">
+        <br>
+        <button id="withdraw-Btn" class="btn btn-success">Withdraw</button>
+        </div>
+    </div>
+</div>
+<div class="row text-center">
+    <div class="col-md-12">
+        <button id="leave-btn">LEAVE</button>
+    </div>
+</div>
+
+</div>
+
+
+
+
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
